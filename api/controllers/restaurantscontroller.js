@@ -45,11 +45,6 @@ class RestaurantController
         return await models.ea_restaurants.findAll({where: {name: body.name}})
     }
 
-    // inscribir rest
-	// ver
-	// eliminar (solo si encargado lo solicita)
-	// NO puede editar
-
  }
 
  module.exports = new RestaurantController()

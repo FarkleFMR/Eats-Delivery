@@ -13,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     totalPrice: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     canceled: {
       type: DataTypes.INTEGER,

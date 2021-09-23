@@ -44,6 +44,7 @@ function initModels(sequelize) {
   ea_locationsPerRestaurant.belongsTo(ea_locations, { as: "idLocation_ea_location", foreignKey: "idLocation"});
   ea_locations.hasMany(ea_locationsPerRestaurant, { as: "ea_locationsPerRestaurants", foreignKey: "idLocation"});
   ea_productsPerOrder.belongsTo(ea_orders, { as: "idOrder_ea_order", foreignKey: "idOrder"});
+  ea_productsPerOrder.removeAttribute('id')
   ea_orders.hasMany(ea_productsPerOrder, { as: "ea_productsPerOrders", foreignKey: "idOrder"});
   ea_productsPerOrder.belongsTo(ea_products, { as: "idProduct_ea_product", foreignKey: "idProduct"});
   ea_products.hasMany(ea_productsPerOrder, { as: "ea_productsPerOrders", foreignKey: "idProduct"});
