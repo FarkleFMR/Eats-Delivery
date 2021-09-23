@@ -1,5 +1,5 @@
 const express = require("express")
-const usersrouter = require("./routes/usersrouter") 
+const Routes = require("./routes/routes")
 
 class App
 {
@@ -11,11 +11,10 @@ class App
 
     routes()
     {
-        this.express.use("/user", usersrouter)
-
-
+        this.express.use("/api", Routes)  
 
         this.express.use('*', (req,res) => {
+            console.log(req.originalUrl)
             res.send("Request invalido");
         });
     }

@@ -30,6 +30,10 @@ module.exports = function(sequelize, DataTypes) {
         model: 'ea_adminCategory',
         key: 'idAdminCategory'
       }
+    },
+    password: {
+      type: DataTypes.TEXT,
+      allowNull: false
     }
   }, {
     sequelize,

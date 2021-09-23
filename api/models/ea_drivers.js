@@ -16,6 +16,11 @@ module.exports = function(sequelize, DataTypes) {
         model: 'ea_driverStates',
         key: 'idDriverState'
       }
+    },
+    rating: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 5
     }
   }, {
     sequelize,

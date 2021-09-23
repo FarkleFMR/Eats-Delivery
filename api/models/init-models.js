@@ -39,6 +39,7 @@ function initModels(sequelize) {
   ea_drivers.belongsTo(ea_driverStates, { as: "idDriverState_ea_driverState", foreignKey: "idDriverState"});
   ea_driverStates.hasMany(ea_drivers, { as: "ea_drivers", foreignKey: "idDriverState"});
   ea_locationPerUsers.belongsTo(ea_locations, { as: "idLocation_ea_location", foreignKey: "idLocation"});
+  ea_locationPerUsers.removeAttribute('id');
   ea_locations.hasMany(ea_locationPerUsers, { as: "ea_locationPerUsers", foreignKey: "idLocation"});
   ea_locationsPerRestaurant.belongsTo(ea_locations, { as: "idLocation_ea_location", foreignKey: "idLocation"});
   ea_locations.hasMany(ea_locationsPerRestaurant, { as: "ea_locationsPerRestaurants", foreignKey: "idLocation"});
