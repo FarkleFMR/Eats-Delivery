@@ -10,4 +10,8 @@ app.post('/create', async (req, res) => {
     res.send(order)
 })
 
+app.get('/prueba', async (req, res) => {
+    res.send('prueba')
+})
+
 module.exports = app
