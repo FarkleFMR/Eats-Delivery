@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Eats</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_tarjeta">TarjetaActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+</resources>
