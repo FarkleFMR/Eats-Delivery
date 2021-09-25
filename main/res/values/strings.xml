@@ -4,4 +4,9 @@
     <string name="title_activity_register">RegisterActivity</string>
     <string name="title_activity_tarjeta">TarjetaActivity</string>
     <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="title_activity_historial">HistorialActivity</string>
+    <string name="title_activity_restaurante_info">RestauranteInfo</string>
+    <string name="title_activity_carrito">CarritoActivity</string>
+    <string name="title_activity_edit_user">EditUser</string>
 </resources>
